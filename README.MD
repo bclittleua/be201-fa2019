@@ -1,7 +1,9 @@
-The above files should:
+The above files:
   
-  -be written to /home/pi/bin
+  -should be written to /home/pi/bin
   
-  -have permisssion to rwx
+  -must have permisssion to rwx
   
   -run in user's crontab (not root!) with logger.sh
+  
+  -requires python3.6 or better
