@@ -44,11 +44,10 @@ def write_temp():
 def disco_post():
     os.system('/usr/bin/python3 /home/pi/bin/discohook.py "CoupDeforce reporting Light & LED Values:\n"' + open('templdr').read())
 
-try:
     # Main loop
-    while True:
-        led_control()
-        write_data()
-        write_temp()
-        disco_post()
-        break
+while True:
+    led_control()
+    write_data()
+    write_temp()
+    disco_post()
+    break
